@@ -1,0 +1,108 @@
+  body {
+  background-color: #381e3fff;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+}
+
+input, button {
+  font-family: 'Nunito', sans-serif;
+  font-weight: auto;
+}
+
+.main-div, .loggedin-div {
+  width: auto;
+  margin: 0px auto;
+  /* margin-top: 150px; */
+  padding: 20px;
+  display: none;
+}
+
+.main-div input {
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+  padding: 15px;
+  outline: none;
+  width: auto;
+  margin-bottom: 20px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+}
+
+.main-div input:focus {
+  border: 1px solid #777;
+}
+
+.main-div button, .loggedin-div button{
+  background: #e81e63ff;
+  color: #fff;
+  border: 1px solid #e81e63ff;
+  border-radius: 5px;
+  padding: 15px;
+  display: block;
+  width: auto;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+}
+
+.main-div button:hover, .loggedin-div button:hover {
+  background: #5d8ffc;
+  color: #fff;
+  border: 1px solid #5d8ffc;
+  cursor: pointer;
+}
+.login {
+    color: #fff;
+}
+.signup {
+    color: #fff;
+}
+.forget {
+    color: #fff;
+}
+.user {
+    color: #fff;
+}
+#user_para {
+    color: #fff;
+}
+#Registrations, #Resets{
+  background: purple;
+  color: #fff;
+  border: 1px solid purple;
+  border-radius: 5px;
+  padding: 15px;
+  width: auto;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  cursor:pointer;
+
+}
+#Registrations:hover, #Resets:hover{
+  background: red;
+  color: #fff;
+  border: 1px solid red;
+  cursor: pointer;
+}
+#want{
+color:white;
+
+}
+#AddAccs{
+display:none;
+}
+iframe{
+width:500px;
+height:700px;
+}
+header > ul > li >a:hover{
+color:red;
+opacity:0.3;
+font-size:20px;
+}
