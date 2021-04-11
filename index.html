@@ -52,7 +52,7 @@ margin-left:400px;
 <li><a href="/home/">Home</a></li>
 <li><a href="/signsignup/">SignIn/SignUp</a></li>
 <li><a href="/channels/">YT Channels</a></li>
-<li><a href="/song/">Music</a></li>
+
 </ul>
 
 </header>
@@ -83,7 +83,11 @@ ton>
     <button onclick="forgetPass()">Reset Password</button>
   </div>
 
-
+<!-- BUTTONSSS-->
+<button onclick="openReg()" id="OpenRegister">Register Tab</button>
+<button onclick="openLog()" id="OpenLog">Login Tab</button>
+<button onclick="openRes()" id="OpenRes">Reset Password Tab</button>
+<!-- BUTTONSSS-->
   <div id="user_div" class="loggedin-div">
     <h3 class="user">Welcome User</h3>
     <p id="user_para"> You're currently logged in.</p>
@@ -99,6 +103,7 @@ ton>
 </div>
 <button id="addCh" onclick="add()">ADD</button>
   
+
 </div>
   </center>
 <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
