@@ -7,6 +7,9 @@ firebase.auth().onAuthStateChanged(function(user) {
     document.getElementById("login_div").style.display = "none";
     document.getElementById("forget_div").style.display = "none";
     document.getElementById("register_div").style.display = "none";
+    document.getElementById("OpenRegister").style.display = "none"
+    document.getElementById("OpenLog").style.display = "none"; 
+    document.getElementById("OpenRes").style.display = "none"; 
     var user = firebase.auth().currentUser;
 
     if(user != null){
@@ -32,9 +35,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 
     document.getElementById("user_div").style.display = "none";
     document.getElementById("login_div").style.display = "block";
-    document.getElementById("forget_div").style.display = "block";
-    document.getElementById("register_div").style.display = "block";
-    
+    document.getElementById("OpenLog").style.display = "none";
 
   }
 });
@@ -58,7 +59,7 @@ function forgetPass(){
 }
 
 function login(){
-
+   
   var userEmail = document.getElementById("email_field").value;
   var userPass = document.getElementById("password_field").value;
 
@@ -90,17 +91,31 @@ function register(){
 function logout(){
   firebase.auth().signOut();
 }
-
-
-
-function openReg(){
-document.getElementById("register_div").style.display = "block"
-
-
-}
-function openReset(){
-document.getElementById("forget_div").style.display = "block"
-}
 function add(){
-document.getElementById("AddAccs").style.display = "block"
+document.getElementById("AddAccs").style.display = "block" 
 }
+function openReg(){
+document.getElementById("register_div").style.display = "block" 
+document.getElementById("login_div").style.display = "none" 
+document.getElementById("forget_div").style.display = "none" 
+document.getElementById("OpenRegister").style.display = "none"
+document.getElementById("OpenLog").style.display = "flex"; 
+}
+
+function openLog(){
+document.getElementById("register_div").style.display = "none" 
+document.getElementById("login_div").style.display = "block" 
+document.getElementById("forget_div").style.display = "none" 
+document.getElementById("OpenRegister").style.display = "block"
+document.getElementById("OpenLog").style.display = "none"; 
+}
+function openRes(){
+document.getElementById("forget_div").style.display = "block" 
+document.getElementById("login_div").style.display = "none" 
+document.getElementById("OpenRegister").style.display = "block"
+document.getElementById("OpenLog").style.display = "block"; 
+document.getElementById("register_div").style.display = "none" 
+document.getElementById("OpenRes").style.display = "none" 
+}
+
+
